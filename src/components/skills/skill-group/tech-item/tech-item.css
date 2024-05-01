@@ -1,0 +1,14 @@
+.skills__name {
+    display: inline-block;
+    font-size: .875rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+    padding: .25rem .5rem;
+    background-color: #FAFAFF;
+    border-radius: .25rem;
+}
+
+.skills__name:hover {
+    background-color: #0563bb;
+    color: #fff;
+}

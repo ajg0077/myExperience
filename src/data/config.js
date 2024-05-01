@@ -9,10 +9,28 @@ export const totalWorkSplit = () => {
   let totalEnabled = 0;
   const { totalWorkExpEnabled, releventExpEnabled, industryExpEnabled } =
     config;
-  console.log({ totalWorkExpEnabled, releventExpEnabled, industryExpEnabled });
   if (totalWorkExpEnabled) totalEnabled += 1;
   if (releventExpEnabled) totalEnabled += 1;
   if (industryExpEnabled) totalEnabled += 1;
-  console.log({ totalEnabled });
   return split / totalEnabled;
 };
+
+export const pageConfig = {
+  homeEnabled: true,
+  aboutEnabled: true,
+  factsEnabled: false,
+  skillsEnabled: true,
+  resumeEnabled: true,
+  portfolioEnabled: false,
+  certificationEnabled: true,
+  clientsEnabled: true,
+  servicesEnabled: false,
+  testimonialEnabled: false,
+  contactEnabled: false,
+  footerEnabled: true,
+  resume: {
+    summaryEnabled: true,
+    experienceEnabled: true,
+    educationEnabled: true
+  }
+}

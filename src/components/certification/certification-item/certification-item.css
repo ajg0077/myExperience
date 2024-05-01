@@ -1,0 +1,14 @@
+.certification-img {
+    max-width: 100%;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.resize_fit_center {
+    height: 200px;
+    width: auto;
+    display: block;
+}

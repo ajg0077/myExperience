@@ -1,4 +1,7 @@
 export const generateWorkDays = (startDate, endDate) => {
+  if (null == endDate) {
+    endDate = new Date();
+  }
   const diff = Math.floor(endDate.getTime() - startDate.getTime());
   const day = 1000 * 60 * 60 * 24;
 
@@ -19,6 +22,12 @@ export const generateWorkDays = (startDate, endDate) => {
   return message;
 };
 
+export const getDiffDays = (date2, date1) => {
+  const diffTime = Math.abs(date2 - date1);
+  const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+  return diffDays;
+}
+
 const monthNames = [
   "Jan",
   "Feb",
@@ -37,3 +46,18 @@ const monthNames = [
 export const generateDateMonth = (date) => {
   return monthNames[date.getMonth()] + " " + date.getFullYear();
 };
+
+export const getAge = (dateStr) => {
+  return _calculateAge(new Date(dateStr));
+}
+
+export const generateBirthday = (date) => {
+  var birthday = new Date(date);
+  return birthday.getDate() + " " + generateDateMonth(birthday);
+}
+
+const _calculateAge = (birthday) => { // birthday is a date
+  var ageDifMs = Date.now() - birthday.getTime();
+  var ageDate = new Date(ageDifMs); // miliseconds from epoch
+  return Math.abs(ageDate.getUTCFullYear() - 1970);
+}

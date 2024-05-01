@@ -1,5 +1,4 @@
-import adidasLogo from "../../img/clients/adidas.png";
-import expediaLogo from "../../img/clients/expedia.png";
+import { clients } from "../../data/clients";
 const Clients = () => {
     return (
         <div>
@@ -10,16 +9,11 @@ const Clients = () => {
                         <p>I'm proud to have collaborated with some awesome companies</p>
                     </div>
                     <div class="row mt-5">
-                        <div class="col-sm">
-                            <div class="d-flex justify-content-center"><img src={expediaLogo} width="250" /></div>
-
-                        </div>
-                        <div class="col-sm">
-                            <div class="d-flex justify-content-center">
-                                <img src={adidasLogo} width="100" />
+                        {clients.map((client) => (
+                            <div class="col-sm">
+                                <div class="d-flex justify-content-center"><img src={client.img} alt={client.name} width={client.width} /></div>
                             </div>
-
-                        </div>
+                        ))}
 
                     </div>
                 </div>

@@ -1,3 +1,5 @@
+import './nav.css'
+import 'boxicons'
 
 const Nav = ({ pageConfig }) => {
     const { homeEnabled, aboutEnabled, factsEnabled, skillsEnabled, resumeEnabled, certificationEnabled, portfolioEnabled, servicesEnabled, clientsEnabled, testimonialEnabled, contactEnabled, footerEnabled, resume } =

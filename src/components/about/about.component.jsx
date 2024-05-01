@@ -1,8 +1,8 @@
 import { getAge, generateBirthday } from "../../utils/datesUtil";
 import { getTotalExp } from "../../data/exp_edu";
-import profileImg from "../../img/profile/profilephoto.jpg";
+import './about.css'
 const About = ({ profile }) => {
-    const { phoneNumber, website, city, state, dob, email, degree, config, profileDesc } =
+    const { phoneNumber, website, city, state, dob, email, degree, config, profileDesc, photo } =
         profile;
     const { enableDOB, enableDegree, enableLocation, enableEmail, enableAge, freelanceAvailable, enablePhone } = config;
     return (
@@ -16,7 +16,7 @@ const About = ({ profile }) => {
 
                     <div class="row">
                         <div class="col-lg-4">
-                            <img src={profileImg} class="img-fluid" alt="" />
+                            <img src={photo} class="img-fluid" alt="" />
                         </div>
                         <div class="col-lg-8 pt-4 pt-lg-0 content">
                             {/* <h3>UI/UX Designer &amp; Web Developer.</h3> */}
@@ -43,7 +43,6 @@ const About = ({ profile }) => {
                             </p>
                         </div>
                     </div>
-
                 </div>
             </section>
         </div>

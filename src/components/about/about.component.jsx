@@ -34,7 +34,7 @@ const About = ({ profile }) => {
                                         {(enableAge) ? <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>{getAge(dob)}</span></li> : ""}
                                         {(enablePhone) ? <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>{phoneNumber}</span></li> : ""}
                                         {(freelanceAvailable) ? <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li> : ""}
-                                        {(website != "") ? <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>{website}</span></li> : ""}
+                                        {(website !== "") ? <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>{website}</span></li> : ""}
                                     </ul>
                                 </div>
                             </div>

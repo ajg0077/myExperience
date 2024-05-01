@@ -1,5 +1,5 @@
 const Footer = ({ profile }) => {
-    const { firstName, middleName, lastName, phoneNumber, dob, address, email, githubUrl, linkedInUrl } =
+    const { firstName, middleName, lastName, githubUrl, linkedInUrl } =
         profile;
     return (
         <div>

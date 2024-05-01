@@ -27,6 +27,7 @@ export const experiences = [
     type: "EDU",
     relevant: false,
     experienceItems: [
+      // eslint-disable-next-line
       "Architected CI\CD build, release and deploy process using Azure DevOps",
       "Set up Linux and Windows Virtual Machines for hosting applications",
       "Configured and used Git repository in Azure Repos for version controlling",

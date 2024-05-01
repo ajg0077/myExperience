@@ -2,7 +2,7 @@ import './nav.css'
 import 'boxicons'
 
 const Nav = ({ pageConfig }) => {
-    const { homeEnabled, aboutEnabled, factsEnabled, skillsEnabled, resumeEnabled, certificationEnabled, portfolioEnabled, servicesEnabled, clientsEnabled, testimonialEnabled, contactEnabled, footerEnabled, resume } =
+    const { homeEnabled, aboutEnabled, skillsEnabled, resumeEnabled, certificationEnabled, portfolioEnabled, servicesEnabled, clientsEnabled, contactEnabled } =
         pageConfig;
     return (
         <div>

@@ -9,8 +9,8 @@ const Home = ({ profile }) => {
                     <h1>{firstName} {middleName} {lastName}</h1>
                     <p>I'm a {role}</p>
                     <div class="social-links">
-                        <a href={githubUrl} target="_blank" class="github"><i class="bx bxl-github"></i></a>
-                        <a href={linkedInUrl} target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        <a href={githubUrl} target="_blank" class="github" rel="noreferrer"><i class="bx bxl-github"></i></a>
+                        <a href={linkedInUrl} target="_blank" class="linkedin" rel="noreferrer"><i class="bx bxl-linkedin"></i></a>
                     </div>
                 </div>
             </section>

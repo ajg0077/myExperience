@@ -19,7 +19,7 @@ const Services = () => {
                                     </svg>
                                     <i class="bx bxl-dribbble"></i>
                                 </div>
-                                <h4><a href="">Lorem Ipsum</a></h4>
+                                {/* <h4><a href="" rel="noreferrer">Lorem Ipsum</a></h4> */}
                                 <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
                             </div>
                         </div>

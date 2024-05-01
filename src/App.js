@@ -16,7 +16,6 @@ import Footer from "./components/footer/footer.component";
 import Certification from "./components/certification/certification.component";
 import Clients from "./components/clients/clients.component";
 import './style.css'
-import 'boxicons'
 
 function App() {
   const profileData = profile;

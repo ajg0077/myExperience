@@ -15,8 +15,6 @@ jobs:
     permissions:
       contents: read
       issues: write
-      pages: write
-      actions: write
     strategy:
       matrix:
         node-version: [18.x]

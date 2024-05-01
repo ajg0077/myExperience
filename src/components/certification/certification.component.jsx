@@ -7,7 +7,7 @@ const Certification = () => {
             <section id="certification" class="certification">
                 <div class="container" data-aos="fade-up">
                     <div class="section-title">
-                        <h2>Certifications and Accreditions</h2>
+                        <h2>Certifications and Accreditations</h2>
                     </div>
                     <div class="row">
                         {certification.map((item) => (

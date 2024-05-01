@@ -1,6 +1,6 @@
 import { getAge, generateBirthday } from "../../utils/datesUtil";
 import { getTotalExp } from "../../data/exp_edu";
-import profileImg from "../../img/profile-img.jpg";
+import profileImg from "../../img/profile/profilephoto.jpg";
 const About = ({ profile }) => {
     const { phoneNumber, website, city, state, dob, email, degree, config, profileDesc } =
         profile;

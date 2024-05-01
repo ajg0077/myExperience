@@ -22,8 +22,8 @@ export const experiences = [
     experience: 6,
     title: "Devops with Azure (Apprenticeship)",
     company: "ICT Academy of Kerala, Trivandrum, Kerala",
-    startDate: new Date("01/06/2023"),
-    endDate: new Date("30/07/2023"),
+    startDate: new Date("06/01/2023"),
+    endDate: new Date("07/30/2023"),
     type: "EDU",
     relevant: false,
     experienceItems: [
